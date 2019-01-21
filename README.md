@@ -8,23 +8,23 @@
 
 <h3>Usage</h3>
 <p>
-<b>Javascript</b><br/>
-var smsRetriever = window.cordova && window.cordova.plugin && window.cordova.plugin.smsretiever;
+<b>Javascript<br/>
+var smsRetriever = window.cordova && window.cordova.plugin && window.cordova.plugin.smsretiever;</b>
 <p>
-if(typeof smsRetriever !== 'undefined') {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;smsRetriever.startSmsRetriever(function(message){ <br/>                       
+ <b>if(typeof smsRetriever !== 'undefined') </b>{<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;<b>smsRetriever.startSmsRetriever(function(message){ </b><br/>                       
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//you receive the SMS here, if you construct it at backend as per the <a href='https://developers.google.com/identity/sms-retriever/verify'>instructions</a>   <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Now you can take the verification code from the message and attach it to the input box in your convinient way.  <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;},function(errMsg){                         <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(errMsg === 'Timed out'){<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;<b>},function(errMsg){</b>                         <br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>if(errMsg === 'Timed out'){</b><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Play services unable to retrieve the SMS to your app for one of these reasons<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//1. SMS received but not constructed properly (Something wrong in your App's hashstring<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//2. SMS not received from last 5 minutes.<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>}else{</b><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Failed to start retriever listner<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}                    <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
-} 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>}</b>                    <br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;<b>});</b><br/>
+ <b>}</b> 
  </p>
 </p>
 
