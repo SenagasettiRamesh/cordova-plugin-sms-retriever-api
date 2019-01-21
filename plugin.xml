@@ -8,8 +8,8 @@
     <license>MIT</license>
 
     <keywords>cordova,android,read SMS,Retriever API,Google SMS Retriver</keywords>
-    <repo>https://github.com/SenagasettiRamesh/cordova-plugin-sms-retiever-api.git</repo>
-    <issue>https://github.com/SenagasettiRamesh/cordova-plugin-sms-retiever-api/issues</issue>
+    <repo>https://github.com/SenagasettiRamesh/cordova-plugin-sms-retriever-api.git</repo>
+    <issue>https://github.com/SenagasettiRamesh/cordova-plugin-sms-retriever-api/issues</issue>
   
     <engines>
         <engine name="cordova" version=">=3.0.0"/>
@@ -23,17 +23,17 @@
         <framework src="com.google.android.gms:play-services-auth-api-phone:$PLAY_SERVICES_VERSION"/>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="SMSRetrieverAPI">
-                <param name="android-package" value="com.cordova.plugin.android.smsretiever.smsretrieverapi"/>
+                <param name="android-package" value="com.cordova.plugin.android.smsretriever.smsretrieverapi"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-                <receiver android:name="com.cordova.plugin.android.smsretiever.smsreceiverapi" android:exported="true">
+                <receiver android:name="com.cordova.plugin.android.smsretriever.smsreceiverapi" android:exported="true">
                     <intent-filter>
                         <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
                     </intent-filter>
                 </receiver>
         </config-file>
-        <source-file src="src/android/smsretrieverapi.java" target-dir="src/com/cordova/plugin/android/smsretiever" />
-        <source-file src="src/android/smsreceiverapi.java" target-dir="src/com/cordova/plugin/android/smsretiever" />
+        <source-file src="src/android/smsretrieverapi.java" target-dir="src/com/cordova/plugin/android/smsretriever" />
+        <source-file src="src/android/smsreceiverapi.java" target-dir="src/com/cordova/plugin/android/smsretriever" />
     </platform>
 </plugin>
