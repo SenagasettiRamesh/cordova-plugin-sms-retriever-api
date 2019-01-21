@@ -1,4 +1,4 @@
-package com.cordova.plugin.android.smsretiever;
+package com.cordova.plugin.android.smsretriever;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
