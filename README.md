@@ -7,7 +7,7 @@
 <p>The cordova plugin for Android that integrates the Google's SMS retriever api to read SMS without asking READ_SMS permission. For more information click <a href='https://developers.google.com/identity/sms-retriever/overview' target='_blank'>here</a>.</p>
 
 <h3>Usage (Javascript)</h3>
-<b>var smsRetriever = window.cordova && window.cordova.plugin && window.cordova.plugin.smsretiever;</b>
+<b>var smsRetriever = window.cordova && window.cordova.plugin && window.cordova.plugin.smsretriever;</b>
 <p>
  <b>if(typeof smsRetriever !== 'undefined') </b>{<br/>
  &nbsp;&nbsp;&nbsp;&nbsp;<b>smsRetriever.startSmsRetriever(function(message){ </b><br/>                     
