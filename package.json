@@ -1,6 +1,6 @@
 {
-  "_from": "cordova-plugin-sms-retiever-api",
-  "_id": "cordova-plugin-sms-retiever-api@0.0.1",
+  "_from": "cordova-plugin-sms-retriever-api",
+  "_id": "cordova-plugin-sms-retriever-api@0.0.1",
   "_inBundle": false,
   "_integrity": "sha512-/XeOS++GEJ+V4nuusp9c3WUYrDl/ieMAh7KyoBXrh+yPb8ANREYIDKXeXXcoYp2cBiBGT3ILyXvXe4qcF0VzOg==",
   "_location": "/cordova-plugin-sms-retiever-api",
@@ -19,33 +19,33 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-sms-retiever-api/-/cordova-plugin-sms-retiever-api-0.0.1.tgz",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-sms-retriever-api/-/cordova-plugin-sms-retriever-api-0.0.1.tgz",
   "_shasum": "d51a3660aa0a5e62af1b3cc6298bda85c23f8eb0",
-  "_spec": "cordova-plugin-sms-retiever-api",
+  "_spec": "cordova-plugin-sms-retriever-api",
   "_where": "/Users/fti/Documents/APP_CODE_BASE_STG/india_digital_mobileapp",
   "author": {
     "name": "Ramesh Senagasetti",
     "email": "ramesh.senagasetti@franklintempleton.com"
   },
   "bugs": {
-    "url": "https://github.com/SenagasettiRamesh/cordova-plugin-sms-retiever-api/issues"
+    "url": "https://github.com/SenagasettiRamesh/cordova-plugin-sms-retriever-api/issues"
   },
   "bundleDependencies": false,
   "cordova": {
-    "id": "cordova-plugin-sms-retiever-api",
+    "id": "cordova-plugin-sms-retriever-api",
     "platforms": [
       "android"
     ]
   },
   "deprecated": false,
-  "description": "An Android Cordova plugin that allows your app to read SMS by using Google's SMS Retriever API.",
+  "description": "An cordova plugin that allows your app to read SMS by using Google's SMS Retriever API for Android devices.",
   "engines": [
     {
       "name": "cordova",
       "version": ">=3.0.0"
     }
   ],
-  "homepage": "https://github.com/SenagasettiRamesh/cordova-plugin-sms-retiever-api/",
+  "homepage": "https://github.com/SenagasettiRamesh/cordova-plugin-sms-retriever-api/",
   "keywords": [
     "read SMS",
     "Retriever API",
@@ -54,10 +54,10 @@
     "cordova-android"
   ],
   "license": "MIT",
-  "name": "cordova-plugin-sms-retiever-api",
+  "name": "cordova-plugin-sms-retriever-api",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SenagasettiRamesh/cordova-plugin-sms-retiever-api.git"
+    "url": "git+https://github.com/SenagasettiRamesh/cordova-plugin-sms-retriever-api.git"
   },
   "version": "0.0.1"
 }
