@@ -16,7 +16,7 @@
     </engines>
   
     <js-module src="www/smsretrieveapi.js" name="SMSRetrieverAPI">        
-        <merges target="cordova.plugin.smsretiever" />
+        <merges target="cordova.plugin.smsretriever" />
     </js-module>
     <platform name="android">
         <preference name="PLAY_SERVICES_VERSION" default="+"/>
