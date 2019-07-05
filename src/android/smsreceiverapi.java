@@ -31,20 +31,22 @@ public class smsreceiverapi extends BroadcastReceiver {
     if (SmsRetriever.SMS_RETRIEVED_ACTION.equals(intent.getAction())) {
       Bundle extras = intent.getExtras();
       Status status = (Status) extras.get(SmsRetriever.EXTRA_STATUS);
-      switch(status.getStatusCode()) {
-        case CommonStatusCodes.SUCCESS:                  
-          String message = (String) extras.get(SmsRetriever.EXTRA_SMS_MESSAGE);          
-          smsretrieverapi.getCallBackContext().success(message);
-          break;
-        case CommonStatusCodes.TIMEOUT:          
-          smsretrieverapi.getCallBackContext().error("Timed out");
-          break;
-        case CommonStatusCodes.DEVELOPER_ERROR:          
-          smsretrieverapi.getCallBackContext().error("The caller app has incorrect number of certificates. Only one certificate is allowed");
-          break;
-        case CommonStatusCodes.ERROR:          
-          smsretrieverapi.getCallBackContext().error("the AppCode collides with other installed apps");
-          break;                    
+      if(smsretrieverapi.getCallBackContext() != null){
+        switch(status.getStatusCode()) {
+          case CommonStatusCodes.SUCCESS:                  
+            String message = (String) extras.get(SmsRetriever.EXTRA_SMS_MESSAGE);          
+            smsretrieverapi.getCallBackContext().success(message);
+            break;
+          case CommonStatusCodes.TIMEOUT:          
+            smsretrieverapi.getCallBackContext().error("Timed out");
+            break;
+          case CommonStatusCodes.DEVELOPER_ERROR:          
+            smsretrieverapi.getCallBackContext().error("The caller app has incorrect number of certificates. Only one certificate is allowed");
+            break;
+          case CommonStatusCodes.ERROR:          
+            smsretrieverapi.getCallBackContext().error("the AppCode collides with other installed apps");
+            break;                    
+        }
       }
     }
   }
